@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ZD Aura</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="body">
+    <div class="header-container">  
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class=" nav-item logo  navbar-brand logo " href="main_page.html">ZD Aura</a>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-first-item ">
+                            <a style="color: white;" class="nav-link  nav-list .nav-link" href="main_page.html">Main menu</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a style="color: white;" class="nav-link nav-list .nav-link" href="choosing.html">Shop</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a style="color: white;" class="nav-link nav-list .nav-link" href="register.html">About us</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a style="color: white;" class="nav-link nav-list .nav-link" href="register.html">Contacts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="color: white;" class="nav-link nav-list .nav-link" href="register.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="color: white;" class="nav-link nav-list .nav-link" href="register.html">Help</a>
+                        </li>
+                        <li class="nav-item-button"></li>
+                        <button id="theme-toggle-btn" class="btn btn-outline-light my-2">Switch Theme</button>
+                        </li>
+                    </ul>
+
+                    <form class="form-inline search-form my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Find" aria-label="Search">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+                <button id="openPopupBtn" class="btn btn-primary">Contact Us</button>
+
+                <div id="popup" class="popup">
+                    <div class="popup-content">
+                        <span id="closePopupBtn" class="close">&times;</span>
+                        <h2>Contact Us</h2>
+                        <form>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required><br><br>
+
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required><br><br>
+
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" required></textarea><br><br>
+
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+    
+    <main>
+        <ul class="product-list">
+            <li>
+                <button class="btn btn-secondary btn-lg">
+                    <img src="https://static.zara.net/assets/public/7579/f2f5/96764721becd/855b995dfa46/09065326800-e1/09065326800-e1.jpg?ts=1724662775487&w=380" alt="Black cap">
+                    <p>Black cap</p>
+                    <p class="price">19.99$</p>
+                </button>
+            </li>
+            <li>
+                <button class="btn btn-secondary btn-lg" >
+                    <img src="https://static.zara.net/assets/public/f6a0/f817/52eb47bcad6d/f08ae493e989/09065326712-e1/09065326712-e1.jpg?ts=1724662783186&w=380" alt="Tan cap">
+                    <p>Tan cap</p>
+                    <p class="price">19.99$</p>
+                </button>
+            </li>
+            <li>
+                <button class="btn btn-secondary btn-lg">
+                    <img src="https://static.zara.net/assets/public/22df/d8b5/a98a488cb019/dfcc93b8f179/03920383658-e1/03920383658-e1.jpg?ts=1725462593323&w=380" alt="Brown cap">
+                    <p>Brown cap</p>
+                    <p class="price">19.99$</p>
+                </button>
+            </li>
+            <li>
+                <button class="btn btn-secondary btn-lg">
+                    <img src="https://static.zara.net/assets/public/3ed5/5a5f/3e624d1193b3/836f11642c28/03920384700-e1/03920384700-e1.jpg?ts=1725462602477&w=380" alt="Pink cap">
+                    <p>Pink cap</p>
+                    <p class="price">19.99$</p>
+                </button>
+            </li>
+            <li>
+                <button class="btn btn-secondary btn-lg">
+                    <img src="https://static.zara.net/assets/public/046f/87db/90f04df2a5a1/333f5730b92d/05875302500-e1/05875302500-e1.jpg?ts=1724662650791&w=380" alt="Green cap">
+                    <p>Green cap</p>
+                    <p class="price">19.99$</p>
+                </button>
+            </li>
+            <li>
+                <button class="btn btn-secondary btn-lg">
+                    <img src="https://static.zara.net/assets/public/261f/1a2c/f8a5492e8fad/ca6678128565/02823304702-e1/02823304702-e1.jpg?ts=1724671118682&w=380" alt="Suede belt">
+                    <p>Suede belt</p>
+                    <p class="price">99.99$</p>
+                </button>
+            </li>
+            <li>
+                <button class="btn btn-secondary btn-lg">
+                    <img src="https://static.zara.net/assets/public/212f/392b/ce1349f39895/e1774efb2439/05919300707-e1/05919300707-e1.jpg?ts=1724671443756&w=380" alt="Fibre braided belt">
+                    <p>Fibre braided belt</p>
+                    <p class="price">79.99$</p>
+                </button>
+            </li>
+            <li>
+                <button class="btn btn-secondary btn-lg">
+                    <img src="https://static.zara.net/assets/public/2b5c/2f1a/ec2941b195a4/4b18e8d60974/02823305700-e1/02823305700-e1.jpg?ts=1724662454332&w=380" alt="Leather braided belt">
+                    <p>Leather braided belt</p>
+                    <p class="price">129.99$</p>
+                </button>
+            </li>
+            <li>
+                <button class="btn btn-secondary btn-lg">
+                    <img src="https://static.zara.net/assets/public/36de/b7f8/7de8472fa658/6b2221f0d502/02750313760-e1/02750313760-e1.jpg?ts=1724662453177&w=380" alt="Brown sunglasses">
+                    <p>Brown sunglasses</p>
+                    <p class="price">79.99$</p>
+                </button>
+            </li>
+            <li>
+                <button class="btn btn-secondary btn-lg">
+                    <img src="https://static.zara.net/assets/public/c555/b622/d1f34894a46c/0a7f3d7d8928/02750311990-e1/02750311990-e1.jpg?ts=1724662453323&w=380" alt="Transparent glasses">
+                    <p>Transparent glasses</p>
+                    <p class="price">79.99$</p>
+                </button>
+            </li>
+        </ul>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer text-white">
+        <nav>
+            <ul class="footer-list d-flex">
+                <li class="footer-item logo"><a href="main_page.html" class="text-white">ZD Aura</a></li>
+                <li class="footer-first-item"><a href="https://www.instagram.com/" class="text-white">Instagram</a></li>
+                <li class="footer-item"><a href="https://x.com/?lang=ru" class="text-white">Twitter</a></li>
+                <li class="footer-item"><a href="https://web.telegram.org/k/#@mirsjex" class="text-white">Telegram</a></li>
+            </ul>
+        </nav>
+        <div style="margin-top:4% ;" id="date-time"></div>
+        <p class="footer-credits text-right pr-3">Abdimanap Dias<br>Turgimbayev Amirkhan<br>Zhetpissov Zhandarbek</p>
+    </footer>
+
+    <script>
+        const themeToggleBtn = document.getElementById('theme-toggle-btn');
+        const body = document.body;
+
+        // Проверка сохраненной темы в localStorage
+        if (localStorage.getItem('theme') === 'dark') {
+            body.classList.add('dark-theme');
+        } else {
+            body.classList.add('light-theme');
+        }
+
+        themeToggleBtn.addEventListener('click', () => {
+            body.classList.toggle('dark-theme');
+            body.classList.toggle('light-theme');
+
+            // Сохранение текущей темы в localStorage
+            if (body.classList.contains('dark-theme')) {
+                localStorage.setItem('theme', 'dark');
+            } else {
+                localStorage.setItem('theme', 'light');
+            }
+        });
+    </script>
+
+
+
+
+    <script>
+    function updateDateTime() {
+        const now = new Date(); // Get the current date and time
+        const options = {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+            hour: '2-digit',
+            minute: '2-digit',
+            second: '2-digit',
+            hour12: true, // Use 12-hour format
+        };
+    
+        // Format the date and time
+        const formattedDateTime = now.toLocaleString('en-US', options);
+    
+        // Display the formatted date and time in the HTML element
+        document.getElementById('date-time').innerText = formattedDateTime;
+    }
+    
+    // Update date and time initially
+    updateDateTime();
+    
+    // Update date and time every second
+    setInterval(updateDateTime, 1000);
+    </script>
+
+    <script>
+        const openPopup = document.getElementById('openPopupBtn');
+        const closePopup = document.getElementById('closePopupBtn');
+        const popup = document.getElementById('popup');
+
+        openPopup.addEventListener('click', () => {
+            popup.style.visibility = 'visible';
+            popup.style.opacity = '1';
+        });
+
+        closePopup.addEventListener('click', () => {
+            popup.style.visibility = 'hidden';
+            popup.style.opacity = '0';
+        });
+
+        window.addEventListener('click', (e) => {
+            if (e.target === popup) {
+                popup.style.visibility = 'hidden';
+                popup.style.opacity = '0';
+            }
+        });
+    </script>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+    
