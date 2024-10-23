@@ -19,7 +19,7 @@
                             <a style="color: white;" class="nav-link nav-list .nav-link" href="choosing.html">Shop</a>
                         </li>
                         <li class="nav-item ">
-                            <a style="color: white;" class="nav-link nav-list .nav-link" href="register.html">About us</a>
+                            <a style="color: white;" class="nav-link nav-list .nav-link" href="faq.html">About us</a>
                         </li>
                         <li class="nav-item ">
                             <a style="color: white;" class="nav-link nav-list .nav-link" href="register.html">Contacts</a>
@@ -39,26 +39,6 @@
                         <input class="form-control mr-sm-2" type="search" placeholder="Find" aria-label="Search">
                         <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
                     </form>
-                </div>
-                <button id="openPopupBtn" class="btn btn-primary">Contact Us</button>
-
-                <div id="popup" class="popup">
-                    <div class="popup-content">
-                        <span id="closePopupBtn" class="close">&times;</span>
-                        <h2>Contact Us</h2>
-                        <form>
-                            <label for="name">Name:</label>
-                            <input type="text" id="name" name="name" required><br><br>
-
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" required><br><br>
-
-                            <label for="message">Message:</label>
-                            <textarea id="message" name="message" required></textarea><br><br>
-
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                        </form>
-                    </div>
                 </div>
             </nav>
         </header>
@@ -100,83 +80,7 @@
         <div style="margin-top:4% ;" id="date-time"></div>
         <p class="footer-credits text-right pr-3">Abdimanap Dias<br>Turgimbayev Amirkhan<br>Zhetpissov Zhandarbek</p>
     </footer>
-
-    <script>
-        const themeToggleBtn = document.getElementById('theme-toggle-btn');
-        const body = document.body;
-
-        // Проверка сохраненной темы в localStorage
-        if (localStorage.getItem('theme') === 'dark') {
-            body.classList.add('dark-theme');
-        } else {
-            body.classList.add('light-theme');
-        }
-
-        themeToggleBtn.addEventListener('click', () => {
-            body.classList.toggle('dark-theme');
-            body.classList.toggle('light-theme');
-
-            // Сохранение текущей темы в localStorage
-            if (body.classList.contains('dark-theme')) {
-                localStorage.setItem('theme', 'dark');
-            } else {
-                localStorage.setItem('theme', 'light');
-            }
-        });
-    </script>
-
-
-
-
-    <script>
-    function updateDateTime() {
-        const now = new Date(); // Get the current date and time
-        const options = {
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric',
-            hour: '2-digit',
-            minute: '2-digit',
-            second: '2-digit',
-            hour12: true, // Use 12-hour format
-        };
-    
-        // Format the date and time
-        const formattedDateTime = now.toLocaleString('en-US', options);
-    
-        // Display the formatted date and time in the HTML element
-        document.getElementById('date-time').innerText = formattedDateTime;
-    }
-    
-    // Update date and time initially
-    updateDateTime();
-    
-    // Update date and time every second
-    setInterval(updateDateTime, 1000);
-    </script>
-
-    <script>
-        const openPopup = document.getElementById('openPopupBtn');
-        const closePopup = document.getElementById('closePopupBtn');
-        const popup = document.getElementById('popup');
-
-        openPopup.addEventListener('click', () => {
-            popup.style.visibility = 'visible';
-            popup.style.opacity = '1';
-        });
-
-        closePopup.addEventListener('click', () => {
-            popup.style.visibility = 'hidden';
-            popup.style.opacity = '0';
-        });
-
-        window.addEventListener('click', (e) => {
-            if (e.target === popup) {
-                popup.style.visibility = 'hidden';
-                popup.style.opacity = '0';
-            }
-        });
-    </script>
+    <script src="scripts.js"></script>
 
     <!-- Bootstrap JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

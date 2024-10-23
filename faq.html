@@ -43,28 +43,50 @@
             </nav>
         </header>
     </div>
-    <!-- main -->
-    <main class="container-fluid p-0"> 
-        <div class="row no-gutters">
-            <div class="col-md-6 p-0"> 
-                <img src="https://assets.vogue.ru/photos/5fb2948389969b177a0921a2/master/w_1600%2Cc_limit/6212_110.jpg"
-                     alt="Изображение компании" class="img-fluid">
+
+    <main class="faq-padding">
+        <h1>Frequently Asked Questions</h1>
+        <div class="faq-section">
+            <div class="faq-item">
+                <div class="faq-question" onclick="hideAndShowAnswer(1)">What is your return policy?</div>
+                <div class="faq-answer" id="answer1" style="display: none;">
+                    Our return policy allows for returns within 30 days of purchase, provided the item is in original condition.
+                </div>
             </div>
-            <div class="col-md-6 d-flex align-items-center justify-content-center p-0">
-                <div class="text-container text-center">
-                    <h2 class="main-title">ZD Aura</h2>
-                    <p class="main-description">
-                        ZD Aura is where style meets personality.
-                        In our store you will find the most beautiful and fashionable items created specifically for young and ambitious people who seek to express their uniqueness through clothing.
-                        We offer carefully selected collections that complement your taste and help you create looks that are in tune with the latest trends.
-                    </p>
+            <div class="faq-item">
+                <div class="faq-question" onclick="hideAndShowAnswer(2)">Do you offer international shipping?</div>
+                <div class="faq-answer" id="answer2" style="display: none;">
+                    Yes, we offer international shipping to most countries. Shipping fees may vary depending on the destination.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="hideAndShowAnswer(3)">How can I track my order?</div>
+                <div class="faq-answer" id="answer3" style="display: none;">
+                    After placing your order, you'll receive an email with a tracking number that you can use to track your order online.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="hideAndShowAnswer(4)">What if something happens with my order?</div>
+                <div class="faq-answer" id="answer4" style="display: none;">
+                    You should contact our tech support and write a report.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="hideAndShowAnswer(5)">What payment methods do you accept?</div>
+                <div class="faq-answer" id="answer5" style="display: none;">
+                    We accept major credit cards (Visa, Mastercard, American Express), PayPal, and other secure payment options. All transactions are encrypted for your safety.
                 </div>
             </div>
         </div>
-        <div class="message text-center">
-            <h2>ZD Aura is your path to style and confidence!</h2>
-        </div>
-    </main> 
+    </main>
+    <script>
+    function hideAndShowAnswer(index) {
+        const answer = document.getElementById('answer' + index);
+        const displayStatus = answer.style.display;
+    
+        answer.style.display = displayStatus === 'block' ? 'none' : 'block';
+    }
+    </script>
 
     <!-- Footer -->
     <footer class="footer text-white">
